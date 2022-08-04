@@ -1,48 +1,66 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>You are invited</title>
-    <style>
-
-      body{
-        background-image: url("./Img/Wanderlusttech-01.JPG"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 700px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-      }
-      .Content {
-        width:200px;
-            height:200px;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            margin-top: -100px;
-            margin-left: -100px;
+<html>
+<title>You are invited</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1, h2{font-family: 'Brush Script MT', cursive;}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
-      .button {
-        display: inline-block;
-        padding: 20px 100px;
-        text-align: center;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #7aa8b7;
-        border-radius: 10px;
-        outline: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="Content">
-    <a class="button" href="./English.html">English</a>
-    <BR>
-    <br>
-    <a class="button" href="./Spanish.html">Spanish</a>
+.bgimg {background-image: url("./Img/WanderlustTech-3183.jpg")}
+</style>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Rosa & Alejandro</h1>
+    <h2><b>09.17.22</b></h2>
   </div>
-  </body>
+</header>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-white w3-center w3-wide" id="rsvp">
+  <p class="w3-large">Kindly Respond By Nov 20th, 2021</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-green w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p><i>Sincerely, Rosa & Alejandro</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green"><a href="sms:+7079724048&body=I'm Going :)">Going</a></button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red"><a href="sms:+7079724048&body=Sorry Can't come">Can't come</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.WanderlustTech.com" title="WanderlustTech" target="_blank" class="w3-hover-text-green">WanderlustTech</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
 </html>
